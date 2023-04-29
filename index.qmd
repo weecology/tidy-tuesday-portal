@@ -9,11 +9,18 @@ filters:
 ## Load the data
 
 Since `webr` only has limited packages we'll load the Tidy Tuesday data directly.
+Click the `Run code` button at the top to load the data.
 
 ```{webr-r}
 surveys <- read.csv("https://tidytuesday.weecology.org/surveys.csv")
 species <- read.csv("https://tidytuesday.weecology.org/species.csv")
 plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")
+```
+
+Take a look at the data here using your favorite commands (e.g., `head(surveys)`).
+Any commands you enter will be run right in the browser.
+
+```{webr-r}
 ```
 
 ## Load packages
@@ -26,4 +33,17 @@ The following packages are currently available in `webr`:
 #| class: scrolling
 packages = read.csv("https://raw.githubusercontent.com/r-wasm/webr-repo/main/repo-packages")
 packages$Formula
+```
+
+Install any packages you want here:
+
+```{webr-r}
+webr::install()
+```
+
+## Tidy Tuesday away!
+
+Anything you type in this block will run when you 
+
+```{webr-r}
 ```
