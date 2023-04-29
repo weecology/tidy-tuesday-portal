@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
   const initializeWebRTimerStart = performance.now();
 
   // Determine if we need to install R packages
-  var installRPackagesList = [''];
+  var installRPackagesList = ['ggplot2', 'dplyr'];
   // Check to see if we have an empty array, if we do set to skip the installation.
   var setupRPackages = !(installRPackagesList.indexOf("") !== -1);
 
@@ -209,7 +209,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="load-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-the-data">Load the data</h2>
 <p>Since <code>webr</code> only has limited packages so far we can’t use the Tidy Tuesday package so we’ll load the data directly.</p>
-<div class="cell">
 <button class="btn btn-default btn-webr" disabled="" type="button" id="webr-run-button-1">Loading webR...</button>
 <div id="webr-editor-1"></div>
 <div id="webr-code-output-1"><pre style="visibility: hidden"></pre></div>
@@ -285,7 +284,6 @@ ul.task-list li input[type="checkbox"] {
   }
 </script>
 
-</div>
 
 
 </section>

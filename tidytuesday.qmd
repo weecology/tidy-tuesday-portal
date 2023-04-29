@@ -4,11 +4,13 @@ editor: visual
 engine: knitr
 filters:
   - webr
+webr:
+  packages: ['ggplot2', 'dplyr']
 ---
 
 ## Load the data
 
 Since `webr` only has limited packages so far we can't use the Tidy Tuesday package so we'll load the data directly.
 
-```{webr}
+```{webr-r}
 ```

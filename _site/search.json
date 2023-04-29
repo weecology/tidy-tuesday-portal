@@ -4,6 +4,6 @@
     "href": "tidytuesday.html",
     "title": "Portal Project Tidy Tuesday - Tidyverse",
     "section": "",
-    "text": "Since webr only has limited packages so far we can’t use the Tidy Tuesday package so we’ll load the data directly.\n\nLoading webR..."
+    "text": "Since webr only has limited packages so far we can’t use the Tidy Tuesday package so we’ll load the data directly.\nLoading webR..."
   }
 ]
