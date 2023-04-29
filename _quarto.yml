@@ -1,8 +1,10 @@
 project:
   type: website
   output-dir: _site
-  post-render:
-    - add-extra-files.R
+  resources: 
+    - "*.csv"
+    - "webr-serviceworker.js"
+    - "webr-worker.js"
 
 
 website:
