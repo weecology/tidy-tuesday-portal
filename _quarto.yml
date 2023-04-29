@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: _site
+  post-render:
+    - add-extra-files.R
+
+
+website:
+  title: "Portal Project - Tidy Tuesday"
+
+format:
+  html:
+    theme: flatly
+    toc: true
