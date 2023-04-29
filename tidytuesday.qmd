@@ -6,6 +6,7 @@ filters:
   - webr
 webr:
   packages: ['ggplot2', 'dplyr']
+  show-header-message: true
 ---
 
 ## Load the data
