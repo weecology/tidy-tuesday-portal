@@ -1,0 +1,26 @@
+---
+title: Portal Project Tidy Tuesday
+editor: visual
+engine: knitr
+filters:
+  - webr
+---
+
+## Load packages
+
+To install packages in `webr` use `webr::install()` with a vector of packages you want to install.
+
+The following packages are currently available in `webr`:
+
+```{r}
+
+```
+
+## Load the data
+
+Since `webr` only has limited packages so far we can't use the Tidy Tuesday package so we'll load the data directly.
+
+```{webr-r}
+packages = read.csv("https://raw.githubusercontent.com/r-wasm/webr-repo/main/repo-packages")
+packages
+```

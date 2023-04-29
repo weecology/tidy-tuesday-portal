@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Portal Project Tidy Tuesday",
+    "section": "",
+    "text": "To install packages in webr use webr::install() with a vector of packages you want to install.\nThe following packages are currently available in webr:"
+  },
+  {
+    "objectID": "index.html#load-the-data",
+    "href": "index.html#load-the-data",
+    "title": "Portal Project Tidy Tuesday",
+    "section": "Load the data",
+    "text": "Load the data\nSince webr only has limited packages so far we can’t use the Tidy Tuesday package so we’ll load the data directly.\nLoading webR..."
+  },
+  {
     "objectID": "tidytuesday.html",
     "href": "tidytuesday.html",
     "title": "Portal Project Tidy Tuesday - Tidyverse",
