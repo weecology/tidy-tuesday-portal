@@ -6,21 +6,24 @@ filters:
   - webr
 ---
 
+## Load the data
+
+Since `webr` only has limited packages we'll load the Tidy Tuesday data directly.
+
+```{webr-r}
+surveys <- read.csv("https://tidytuesday.weecology.org/surveys.csv")
+species <- read.csv("https://tidytuesday.weecology.org/species.csv")
+plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")
+```
+
 ## Load packages
 
 To install packages in `webr` use `webr::install()` with a vector of packages you want to install.
 
 The following packages are currently available in `webr`:
 
-```{r}
-
-```
-
-## Load the data
-
-Since `webr` only has limited packages so far we can't use the Tidy Tuesday package so we'll load the data directly.
-
-```{webr-r}
+```{r, echo=FALSE}
+#| class: scrolling
 packages = read.csv("https://raw.githubusercontent.com/r-wasm/webr-repo/main/repo-packages")
-packages
+packages$Formula
 ```

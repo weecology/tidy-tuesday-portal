@@ -168,6 +168,7 @@ ul.task-list li input[type="checkbox"] {
 </script>  
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -182,8 +183,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#load-packages" id="toc-load-packages" class="nav-link active" data-scroll-target="#load-packages">Load packages</a></li>
-  <li><a href="#load-the-data" id="toc-load-the-data" class="nav-link" data-scroll-target="#load-the-data">Load the data</a></li>
+  <li><a href="#load-the-data" id="toc-load-the-data" class="nav-link active" data-scroll-target="#load-the-data">Load the data</a></li>
+  <li><a href="#load-packages" id="toc-load-packages" class="nav-link" data-scroll-target="#load-packages">Load packages</a></li>
   </ul>
 </nav>
     </div>
@@ -207,17 +208,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="load-packages" class="level2">
-<h2 class="anchored" data-anchor-id="load-packages">Load packages</h2>
-<p>To install packages in <code>webr</code> use <code>webr::install()</code> with a vector of packages you want to install.</p>
-<p>The following packages are currently available in <code>webr</code>:</p>
-<div class="cell">
-
-</div>
-</section>
 <section id="load-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-the-data">Load the data</h2>
-<p>Since <code>webr</code> only has limited packages so far we can’t use the Tidy Tuesday package so we’ll load the data directly.</p>
+<p>Since <code>webr</code> only has limited packages we’ll load the Tidy Tuesday data directly.</p>
 <button class="btn btn-default btn-webr" disabled="" type="button" id="webr-run-button-1">Loading webR...</button>
 <div id="webr-editor-1"></div>
 <div id="webr-code-output-1"><pre style="visibility: hidden"></pre></div>
@@ -231,8 +224,9 @@ ul.task-list li input[type="checkbox"] {
     elt.style.height = "auto";
     editorDiv.append(elt);
   },{
-    value: `packages = read.csv("https://raw.githubusercontent.com/r-wasm/webr-repo/main/repo-packages")
-packages`,
+    value: `surveys <- read.csv("https://tidytuesday.weecology.org/surveys.csv")
+species <- read.csv("https://tidytuesday.weecology.org/species.csv")
+plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")`,
     lineNumbers: true,
     mode: "r",
     theme: "light default",
@@ -294,6 +288,34 @@ packages`,
   }
 </script>
 
+</section>
+<section id="load-packages" class="level2">
+<h2 class="anchored" data-anchor-id="load-packages">Load packages</h2>
+<p>To install packages in <code>webr</code> use <code>webr::install()</code> with a vector of packages you want to install.</p>
+<p>The following packages are currently available in <code>webr</code>:</p>
+<div class="cell scrolling">
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Hmisc"        "MASS"         "Matrix"       "R6"           "RColorBrewer"
+ [6] "Rcpp"         "base64enc"    "bit"          "bit64"        "bitops"      
+[11] "brio"         "bslib"        "cachem"       "cellranger"   "cli"         
+[16] "clipr"        "colorspace"   "commonmark"   "cpp11"        "crayon"      
+[21] "data.table"   "decor"        "desc"         "diffobj"      "digest"      
+[26] "dplyr"        "ellipsis"     "evaluate"     "fansi"        "farver"      
+[31] "fastmap"      "fontawesome"  "forcats"      "generics"     "ggplot2"     
+[36] "glue"         "gtable"       "hexbin"       "hms"          "htmltools"   
+[41] "httr"         "isoband"      "jquerylib"    "jsonlite"     "labeling"    
+[46] "later"        "lattice"      "latticeExtra" "lifecycle"    "magrittr"    
+[51] "memoise"      "mgcv"         "mime"         "mockr"        "munsell"     
+[56] "nlme"         "pillar"       "pkgconfig"    "pkgload"      "praise"      
+[61] "prettyunits"  "progress"     "promises"     "purrr"        "rappdirs"    
+[66] "readr"        "readxl"       "rematch"      "rematch2"     "rlang"       
+[71] "rprojroot"    "rstudioapi"   "sass"         "scales"       "survival"    
+[76] "sourcetools"  "stringi"      "stringr"      "svglite"      "testthat"    
+[81] "tibble"       "tidyr"        "tidyselect"   "tinytest"     "tzdb"        
+[86] "unitizer"     "utf8"         "vctrs"        "viridisLite"  "vroom"       
+[91] "waldo"        "whoami"       "withr"        "writexl"      "xtable"      </code></pre>
+</div>
+</div>
 
 
 </section>
