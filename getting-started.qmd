@@ -8,8 +8,8 @@ filters:
 
 ## Load the data
 
-Since `webr` only has limited packages we'll load the Tidy Tuesday data directly.
-Click the `Run code` button at the top to load the data.
+WebR only has limited packages, so we'll load the data directly.
+Click `Run code` to load the data.
 
 ```{webr-r}
 surveys <- read.csv("https://tidytuesday.weecology.org/surveys.csv")
@@ -17,8 +17,8 @@ species <- read.csv("https://tidytuesday.weecology.org/species.csv")
 plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")
 ```
 
-Take a look at the data here using your favorite commands (e.g., `head(surveys)`).
-Any commands you enter will be run right in the browser.
+Take a look at the data here (e.g., `head(surveys)`).
+Any commands you enter will be run when you click `Run code`.
 
 ```{webr-r}
 ```
@@ -45,16 +45,25 @@ The following packages are currently available in `webr`:
 packages = read.csv("https://raw.githubusercontent.com/r-wasm/webr-repo/main/repo-packages")
 packages$Formula
 ```
-
-Install any packages you want here:
+<br>
+Install any packages you want here by changing `package1` with the package name you want to install:
 
 ```{webr-r}
-webr::install()
+webr::install(c('package1'))
 ```
+
+::: {.callout-warning}
+# Big packages can be a little slow
+
+Big packages like `ggplot2` can be a little slow to install and load in WebR
+
+:::
 
 ## Tidy Tuesday away!
 
-Anything you type in this block will run when you 
+Anything you type in this block will run when you click `Run code`.
+This cell also has access to objects created in other WebR cells on this page (like the data and packages installed above).
+Enjoy!
 
 ```{webr-r}
 ```

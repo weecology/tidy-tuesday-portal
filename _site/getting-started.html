@@ -247,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="load-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-the-data">Load the data</h2>
-<p>Since <code>webr</code> only has limited packages we’ll load the Tidy Tuesday data directly. Click the <code>Run code</code> button at the top to load the data.</p>
+<p>WebR only has limited packages, so we’ll load the data directly. Click <code>Run code</code> to load the data.</p>
 <button class="btn btn-default btn-webr" disabled="" type="button" id="webr-run-button-1">Loading webR...</button>
 <div id="webr-editor-1"></div>
 <div id="webr-code-output-1"><pre style="visibility: hidden"></pre></div>
@@ -325,7 +325,7 @@ plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")`,
   }
 </script>
 
-<p>Take a look at the data here using your favorite commands (e.g., <code>head(surveys)</code>). Any commands you enter will be run right in the browser.</p>
+<p>Take a look at the data here (e.g., <code>head(surveys)</code>). Any commands you enter will be run when you click <code>Run code</code>.</p>
 <button class="btn btn-default btn-webr" disabled="" type="button" id="webr-run-button-2">Loading webR...</button>
 <div id="webr-editor-2"></div>
 <div id="webr-code-output-2"><pre style="visibility: hidden"></pre></div>
@@ -442,7 +442,7 @@ Not all NA’s are NA’s
 [91] "waldo"        "whoami"       "withr"        "writexl"      "xtable"      </code></pre>
 </div>
 </div>
-<p>Install any packages you want here:</p>
+<p><br> Install any packages you want here by changing <code>package1</code> with the package name you want to install:</p>
 <button class="btn btn-default btn-webr" disabled="" type="button" id="webr-run-button-3">Loading webR...</button>
 <div id="webr-editor-3"></div>
 <div id="webr-code-output-3"><pre style="visibility: hidden"></pre></div>
@@ -456,7 +456,7 @@ Not all NA’s are NA’s
     elt.style.height = "auto";
     editorDiv.append(elt);
   },{
-    value: `webr::install()`,
+    value: `webr::install(c('package1'))`,
     lineNumbers: true,
     mode: "r",
     theme: "light default",
@@ -518,10 +518,23 @@ Not all NA’s are NA’s
   }
 </script>
 
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Big packages can be a little slow
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Big packages like <code>ggplot2</code> can be a little slow to install and load in WebR</p>
+</div>
+</div>
 </section>
 <section id="tidy-tuesday-away" class="level2">
 <h2 class="anchored" data-anchor-id="tidy-tuesday-away">Tidy Tuesday away!</h2>
-<p>Anything you type in this block will run when you</p>
+<p>Anything you type in this block will run when you click <code>Run code</code>. This cell also has access to objects created in other WebR cells on this page (like the data and packages installed above). Enjoy!</p>
 <button class="btn btn-default btn-webr" disabled="" type="button" id="webr-run-button-4">Loading webR...</button>
 <div id="webr-editor-4"></div>
 <div id="webr-code-output-4"><pre style="visibility: hidden"></pre></div>
