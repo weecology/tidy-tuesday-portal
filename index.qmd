@@ -14,7 +14,7 @@ This site lets you use it for this weeks Tidy Tuesday on long-term monitoring da
 
 ## Data
 
-The dataset is a on the long-term dynamics of rodent species. It has three tables:
+The dataset is on the long-term dynamics of rodent species. It has three tables:
 
 * `surveys` - which has one row for each individual animal caught including where, when, and information on the individual like size
 * `species`, which has one row for each species in the dataset
