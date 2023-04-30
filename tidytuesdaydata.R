@@ -4,10 +4,6 @@ library(dplyr)
 download_observations(".")
 data_tables <- load_rodent_data()
 
-survey_data <- summarize_individual_rodents(
-  time = "date",
-  length = "Longterm")
-
 species_data <- data_tables[["species_table"]]
 plots_data <- data_tables[["plots_table"]]
 
@@ -24,10 +20,15 @@ plots_data_longterm <- plot_treatments |>
               all(treatment == "exclosure") ~ "exclosure")) |>
   filter(!is.na(treatment))
 
-species_data |>
-  filter(censustarget == 1,
-    unidentified == 0)
+species_data <- species_data |>
+  filter(censustarget == 1, unidentified == 0)
 
-write.csv(survey_data, "surveys.csv", row.names = FALSE)
-write.csv(plots_data_longterm, "plots.csv", row.names = FALSE)
-write.csv(species_data, "species.csv", row.names = FALSE)
+survey_data <- summarize_individual_rodents(
+  time = "date",
+  length = "Longterm") |>
+  filter(year > 1977) |>
+  filter(species %in% unique(species_data$species))
+
+write.csv(survey_data, "surveys.csv", row.names = FALSE, na = "")
+write.csv(plots_data_longterm, "plots.csv", row.names = FALSE, na = "")
+write.csv(species_data, "species.csv", row.names = FALSE, na = "")
