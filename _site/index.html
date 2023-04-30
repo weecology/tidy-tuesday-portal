@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#webr" id="toc-webr" class="nav-link active" data-scroll-target="#webr">WebR</a></li>
+  <li><a href="#tidytuesday-webr" id="toc-tidytuesday-webr" class="nav-link active" data-scroll-target="#tidytuesday-webr">#TidyTuesday + WebR</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#lets-go" id="toc-lets-go" class="nav-link" data-scroll-target="#lets-go">Let’s go!</a></li>
   <li><a href="#what-is-this-magic" id="toc-what-is-this-magic" class="nav-link" data-scroll-target="#what-is-this-magic">What is this magic</a></li>
@@ -122,16 +122,22 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="webr" class="level2">
-<h2 class="anchored" data-anchor-id="webr">WebR</h2>
-<p><a href="https://docs.r-wasm.org/webr/latest/">WebR</a> is a version of R that runs in the browswer. You don’t need to install R and no one needs to setup a server, it just runs on your local computer, but through your browser. This site lets you use it for this weeks Tidy Tuesday using the long-term monitoring data on mammals from <a href="https://portal.weecology.org">the Portal Project</a>.</p>
+<section id="tidytuesday-webr" class="level2">
+<h2 class="anchored" data-anchor-id="tidytuesday-webr">#TidyTuesday + WebR</h2>
+<p><a href="https://docs.r-wasm.org/webr/latest/">WebR</a> is a version of R that runs in the browser. You don’t need to install R and no one needs to setup a server It just runs on your local computer (or even your phone), but through your browser. This site lets you use it for this weeks Tidy Tuesday using the long-term monitoring data on mammals from <a href="https://portal.weecology.org">the Portal Project</a>.</p>
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The dataset is a on the long-term dynamics of rodent species. It has three tables:</p>
+<ul>
+<li><code>surveys</code> - which has one row for each individual animal caught including where, when, and information on the individual like size</li>
+<li><code>species</code>, which has one row for each species in the dataset</li>
+<li><code>plots</code>, which has one row per plot that tells you if the plot is a <code>control</code> plot or an <code>exclosure</code> plot where the dominant kangaroo rat species have been excluded.</li>
+</ul>
 </section>
 <section id="lets-go" class="level2">
 <h2 class="anchored" data-anchor-id="lets-go">Let’s go!</h2>
-<p>There are three pages on this site:</p>
+<p>There are three WebR-enabled pages on this site:</p>
 <ol type="1">
 <li><a href="./getting-started.html">Getting Started</a> - will walk you through loading the data and installing packages in WebR</li>
 <li><a href="./base.html">Base R</a> - gives you a Base R only setup with the data already loaded</li>
@@ -140,8 +146,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-is-this-magic" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-this-magic">What is this magic</h2>
-<p>If you want to see how all of this works you can checkout the <a href="https://github.com/weecology/tidy-tuesday-portal">GitHub repository</a> for this site. The site uses <a href="https://quarto.org/">Quarto</a> with the <a href="https://github.com/coatless/quarto-webr">Quarto WebR extension</a>.<br>
-Preloading data on the <a href="./base.html">Base</a> and <a href="./tidyverse.html">Tidyverse</a> pages requires a little bit of javascript.</p>
+<p>If you want to see how all of this works you can checkout the <a href="https://github.com/weecology/tidy-tuesday-portal">GitHub repository</a> for this site. The site uses <a href="https://quarto.org/">Quarto</a> with the <a href="https://github.com/coatless/quarto-webr">Quarto WebR extension</a>. Preloading data on the <a href="./base.html">Base</a> and <a href="./tidyverse.html">Tidyverse</a> pages requires a <a href="https://github.com/weecology/tidy-tuesday-portal/blob/1e0887f63fb1918ff5df6271a77bfceba01c5db6/base.qmd#L9-L23">little bit of javascript</a>.</p>
 
 
 </section>

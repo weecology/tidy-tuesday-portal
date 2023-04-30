@@ -5,17 +5,24 @@ filters:
   - webr
 ---
 
-## WebR
+## #TidyTuesday + WebR
 
-[WebR](https://docs.r-wasm.org/webr/latest/) is a version of R that runs in the browswer.
-You don't need to install R and no one needs to setup a server, it just runs on your local computer, but through your browser.
+[WebR](https://docs.r-wasm.org/webr/latest/) is a version of R that runs in the browser.
+You don't need to install R and no one needs to setup a server
+It just runs on your local computer (or even your phone), but through your browser.
 This site lets you use it for this weeks Tidy Tuesday using the long-term monitoring data on mammals from [the Portal Project](https://portal.weecology.org). 
 
 ## Data
 
+The dataset is a on the long-term dynamics of rodent species. It has three tables:
+
+* `surveys` - which has one row for each individual animal caught including where, when, and information on the individual like size
+* `species`, which has one row for each species in the dataset
+* `plots`, which has one row per plot that tells you if the plot is a `control` plot or an `exclosure` plot where the dominant kangaroo rat species have been excluded.
+
 ## Let's go!
 
-There are three pages on this site:
+There are three WebR-enabled pages on this site:
 
 1. [Getting Started](/getting-started.qmd) - will walk you through loading the data and installing packages in WebR
 2. [Base R](/base.qmd) - gives you a Base R only setup with the data already loaded
@@ -24,5 +31,5 @@ There are three pages on this site:
 ## What is this magic
 
 If you want to see how all of this works you can checkout the [GitHub repository](https://github.com/weecology/tidy-tuesday-portal) for this site.
-The site uses [Quarto](https://quarto.org/) with the [Quarto WebR extension](https://github.com/coatless/quarto-webr).  
-Preloading data on the [Base](/base.qmd) and [Tidyverse](/tidyverse.qmd) pages requires a little bit of javascript.
+The site uses [Quarto](https://quarto.org/) with the [Quarto WebR extension](https://github.com/coatless/quarto-webr).
+Preloading data on the [Base](/base.qmd) and [Tidyverse](/tidyverse.qmd) pages requires a [little bit of javascript](https://github.com/weecology/tidy-tuesday-portal/blob/1e0887f63fb1918ff5df6271a77bfceba01c5db6/base.qmd#L9-L23).
