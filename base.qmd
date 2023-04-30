@@ -55,7 +55,7 @@ head(plots, n = 3)
 
 :::
 
-::: {.callout-tip collapse="true"}
+::: {.callout-tip collapse="false"}
 
 ## Install packages
 
