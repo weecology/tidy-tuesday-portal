@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -113,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#tidytuesday-webr" id="toc-tidytuesday-webr" class="nav-link active" data-scroll-target="#tidytuesday-webr">#TidyTuesday + WebR</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#lets-go" id="toc-lets-go" class="nav-link" data-scroll-target="#lets-go">Let’s go!</a></li>
-  <li><a href="#what-is-this-magic" id="toc-what-is-this-magic" class="nav-link" data-scroll-target="#what-is-this-magic">What is this magic</a></li>
+  <li><a href="#what-is-this-magic" id="toc-what-is-this-magic" class="nav-link" data-scroll-target="#what-is-this-magic">What is this magic?!?</a></li>
   </ul>
 </nav>
     </div>
@@ -134,6 +197,81 @@ ul.task-list li input[type="checkbox"] {
 <li><code>species</code>, which has one row for each species in the dataset</li>
 <li><code>plots</code>, which has one row per plot that tells you if the plot is a <code>control</code> plot or an <code>exclosure</code> plot where the dominant kangaroo rat species have been excluded.</li>
 </ul>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Show. Me. The. Data.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(surveys)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  censusdate month day year treatment plot stake species  sex reprod  age
+1 1978-01-08     1   8 1978 exclosure    3    11      OL &lt;NA&gt;   &lt;NA&gt; &lt;NA&gt;
+2 1978-01-08     1   8 1978 exclosure    3    22      NA &lt;NA&gt;   &lt;NA&gt; &lt;NA&gt;
+3 1978-01-08     1   8 1978 exclosure    3    54      PF    M   &lt;NA&gt; &lt;NA&gt;
+4 1978-01-08     1   9 1978   control   14    14      OT &lt;NA&gt;   &lt;NA&gt; &lt;NA&gt;
+5 1978-01-08     1   9 1978   control   17    14      DM    M      Z &lt;NA&gt;
+6 1978-01-08     1   9 1978   control   17    16      DM    F   &lt;NA&gt; &lt;NA&gt;
+  testes vagina pregnant nipples lactation hfl wgt  tag note2 ltag note3
+1   &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;      &lt;NA&gt;  NA  NA    0  &lt;NA&gt;    0  &lt;NA&gt;
+2   &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;      &lt;NA&gt;  NA  NA    0  &lt;NA&gt;    0  &lt;NA&gt;
+3      S   &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;      &lt;NA&gt;  15   7    0  &lt;NA&gt;    0  &lt;NA&gt;
+4   &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;      &lt;NA&gt;  NA  NA    0  &lt;NA&gt;    0  &lt;NA&gt;
+5   &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;      &lt;NA&gt;  36  40 4872  &lt;NA&gt;    0  &lt;NA&gt;
+6   &lt;NA&gt;      S     &lt;NA&gt;    &lt;NA&gt;      &lt;NA&gt;  34  37 4881  &lt;NA&gt;    0  &lt;NA&gt;</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  species           scientificname   taxa             commonname censustarget
+1      BA          Baiomys taylori Rodent   Northern pygmy mouse            1
+2      PB      Chaetodipus baileyi Rodent  Bailey's pocket mouse            1
+3      PH     Chaetodipus hispidus Rodent    Hispid pocket mouse            1
+4      PI  Chaetodipus intermedius Rodent      Rock pocket mouse            1
+5      PP Chaetodipus penicillatus Rodent    Desert pocket mouse            1
+6      DM       Dipodomys merriami Rodent Merriam's kangaroo rat            1
+  unidentified rodent granivore minhfl  meanhfl maxhfl minwgt   meanwgt maxwgt
+1            0      1         1      6 13.25065     15      6  9.449086     18
+2            0      1         1     16 26.03125     47     10 31.873515     79
+3            0      1         1     21 25.12821     28     18 30.717949     48
+4            0      1         1     18 21.96262     24     10 17.466667     28
+5            0      1         1     11 21.47861     27      4 17.618513     42
+6            0      1         1     21 35.88389     50     13 43.527217     66
+    juvwgt
+1       NA
+2 18.99505
+3 24.00000
+4 10.00000
+5 11.66603
+6 26.39258</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(plots)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  plot treatment
+1    3 exclosure
+2    4   control
+3   11   control
+4   14   control
+5   15 exclosure
+6   17   control</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="lets-go" class="level2">
 <h2 class="anchored" data-anchor-id="lets-go">Let’s go!</h2>
@@ -145,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 </section>
 <section id="what-is-this-magic" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-this-magic">What is this magic</h2>
+<h2 class="anchored" data-anchor-id="what-is-this-magic">What is this magic?!?</h2>
 <p>If you want to see how all of this works you can checkout the <a href="https://github.com/weecology/tidy-tuesday-portal">GitHub repository</a> for this site. The site uses <a href="https://quarto.org/">Quarto</a> with the <a href="https://github.com/coatless/quarto-webr">Quarto WebR extension</a>. Preloading data on the <a href="./base.html">Base</a> and <a href="./tidyverse.html">Tidyverse</a> pages requires a <a href="https://github.com/weecology/tidy-tuesday-portal/blob/1e0887f63fb1918ff5df6271a77bfceba01c5db6/base.qmd#L9-L23">little bit of javascript</a>.</p>
 
 

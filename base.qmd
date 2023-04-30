@@ -30,7 +30,7 @@ species <- read.csv("https://tidytuesday.weecology.org/species.csv", na.strings 
 plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")
 ```
 
-::: {.callout-note collapse="true"}
+::: {.callout-tip collapse="true"}
 
 ## The data
 There are three tables in this dataset.
@@ -51,6 +51,27 @@ head(species, n = 3)
 
 ```{r}
 head(plots, n = 3)
+```
+
+:::
+
+::: {.callout-tip collapse="true"}
+
+## Install packages
+
+You can install packages that are available for `webr` using `webr::install()` with a vector of packages you want to install.
+Install any packages you want here:
+
+```{webr-r}
+webr::install()
+```
+
+The following packages are currently available in `webr`:
+
+```{r, echo=FALSE}
+#| class: scrolling
+packages = read.csv("https://raw.githubusercontent.com/r-wasm/webr-repo/main/repo-packages")
+packages$Formula
 ```
 
 :::
