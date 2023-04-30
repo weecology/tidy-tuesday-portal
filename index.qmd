@@ -20,6 +20,31 @@ The dataset is a on the long-term dynamics of rodent species. It has three table
 * `species`, which has one row for each species in the dataset
 * `plots`, which has one row per plot that tells you if the plot is a `control` plot or an `exclosure` plot where the dominant kangaroo rat species have been excluded.
 
+::: {.callout-tip collapse="true"}
+
+## Show. Me. The. Data.
+```{r}
+#| echo: false
+#| output: false
+surveys <- read.csv("https://tidytuesday.weecology.org/surveys.csv", na.strings = c(""))
+species <- read.csv("https://tidytuesday.weecology.org/species.csv", na.strings = c(""))
+plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")
+```
+
+```{r}
+head(surveys)
+```
+
+```{r}
+head(species)
+```
+
+```{r}
+head(plots)
+```
+
+:::
+
 ## Let's go!
 
 There are three WebR-enabled pages on this site:
@@ -28,7 +53,7 @@ There are three WebR-enabled pages on this site:
 2. [Base R](/base.qmd) - gives you a Base R only setup with the data already loaded
 3. [Tidyverse](/tidyverse.qmd) - gives you R + dplyr + ggplot2 and the data already loaded. _This page takes about 20 seconds to load the packages_
 
-## What is this magic
+## What is this magic?!?
 
 If you want to see how all of this works you can checkout the [GitHub repository](https://github.com/weecology/tidy-tuesday-portal) for this site.
 The site uses [Quarto](https://quarto.org/) with the [Quarto WebR extension](https://github.com/coatless/quarto-webr).
