@@ -1,2 +1,4 @@
 _extensions/
 /.quarto/
+webr-serviceworker.js
+webr-worker.js
