@@ -24,7 +24,7 @@ Any commands you enter will be run when you click `Run code`.
 ```
 
 
-::: {.callout-important}
+::: {.callout-warning}
 
 ## Not all NA's are NA's
 
