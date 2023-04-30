@@ -9,8 +9,8 @@ filters:
 
 [WebR](https://docs.r-wasm.org/webr/latest/) is a version of R that runs in the browser.
 You don't need to install R and no one needs to setup a server.
-It just runs on your local computer (or even your phone), but through your browser.
-This site lets you use it for this weeks Tidy Tuesday using the long-term monitoring data on mammals from [the Portal Project](https://portal.weecology.org). 
+It just works - even your phone.
+This site lets you use it for this weeks Tidy Tuesday on long-term monitoring data on mammals from [the Portal Project](https://portal.weecology.org). 
 
 ## Data
 
