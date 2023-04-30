@@ -23,7 +23,16 @@ Any commands you enter will be run right in the browser.
 ```{webr-r}
 ```
 
-Note that there is a species code `"NA"` for [_Neotoma albigula_](https://en.wikipedia.org/wiki/White-throated_woodrat), so you might want to add `na.strings = ""` to the `read.csv` calls (e.g., `read.csv("https://tidytuesday.weecology.org/surveys.csv", na.strings = "")`). You can change them right in the code block and click `Run code` to rerun.
+
+::: {.callout-important}
+
+## Not all NA's are NA's
+
+There is a species code `"NA"` for [_Neotoma albigula_](https://en.wikipedia.org/wiki/White-throated_woodrat).
+Try adding `na.strings = ""` to `read.csv()` for `surveys` and `species` to properly import it.
+You can change them right in the code block and click `Run code` to rerun.
+
+:::
 
 ## Install packages
 

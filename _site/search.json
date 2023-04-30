@@ -4,7 +4,7 @@
     "href": "getting-started.html",
     "title": "Getting started with webR for Tidy Tuesday",
     "section": "",
-    "text": "Since webr only has limited packages we’ll load the Tidy Tuesday data directly. Click the Run code button at the top to load the data.\nLoading webR...\n\n\n\n\nTake a look at the data here using your favorite commands (e.g., head(surveys)). Any commands you enter will be run right in the browser.\nLoading webR...\n\n\n\n\nNote that there is a species code \"NA\" for Neotoma albigula, so you might want to add na.strings = \"\" to the read.csv calls (e.g., read.csv(\"https://tidytuesday.weecology.org/surveys.csv\", na.strings = \"\")). You can change them right in the code block and click Run code to rerun."
+    "text": "Since webr only has limited packages we’ll load the Tidy Tuesday data directly. Click the Run code button at the top to load the data.\nLoading webR...\n\n\n\n\nTake a look at the data here using your favorite commands (e.g., head(surveys)). Any commands you enter will be run right in the browser.\nLoading webR...\n\n\n\n\n\n\n\n\n\n\nNot all NA’s are NA’s\n\n\n\nThere is a species code \"NA\" for Neotoma albigula. Try adding na.strings = \"\" to read.csv() for surveys and species to properly import it. You can change them right in the code block and click Run code to rerun."
   },
   {
     "objectID": "getting-started.html#install-packages",

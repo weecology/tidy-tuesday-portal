@@ -401,7 +401,19 @@ plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")`,
   }
 </script>
 
-<p>Note that there is a species code <code>"NA"</code> for <a href="https://en.wikipedia.org/wiki/White-throated_woodrat"><em>Neotoma albigula</em></a>, so you might want to add <code>na.strings = ""</code> to the <code>read.csv</code> calls (e.g., <code>read.csv("https://tidytuesday.weecology.org/surveys.csv", na.strings = "")</code>). You can change them right in the code block and click <code>Run code</code> to rerun.</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Not all NA’s are NA’s
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There is a species code <code>"NA"</code> for <a href="https://en.wikipedia.org/wiki/White-throated_woodrat"><em>Neotoma albigula</em></a>. Try adding <code>na.strings = ""</code> to <code>read.csv()</code> for <code>surveys</code> and <code>species</code> to properly import it. You can change them right in the code block and click <code>Run code</code> to rerun.</p>
+</div>
+</div>
 </section>
 <section id="install-packages" class="level2">
 <h2 class="anchored" data-anchor-id="install-packages">Install packages</h2>
