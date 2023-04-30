@@ -1,49 +1,28 @@
 ---
-title: Portal Project Tidy Tuesday
 editor: visual
 engine: knitr
 filters:
   - webr
 ---
 
-## Load the data
+## WebR
 
-Since `webr` only has limited packages we'll load the Tidy Tuesday data directly.
-Click the `Run code` button at the top to load the data.
+[WebR](https://docs.r-wasm.org/webr/latest/) is a version of R that runs in the browswer.
+You don't need to install R and no one needs to setup a server, it just runs on your local computer, but through your browser.
+This site lets you use it for this weeks Tidy Tuesday using the long-term monitoring data on mammals from [the Portal Project](https://portal.weecology.org). 
 
-```{webr-r}
-surveys <- read.csv("https://tidytuesday.weecology.org/surveys.csv")
-species <- read.csv("https://tidytuesday.weecology.org/species.csv")
-plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")
-```
+## Data
 
-Take a look at the data here using your favorite commands (e.g., `head(surveys)`).
-Any commands you enter will be run right in the browser.
+## Let's go!
 
-```{webr-r}
-```
+There are three pages on this site:
 
-## Load packages
+1. [Getting Started](/getting-started.qmd) - will walk you through loading the data and installing packages in WebR
+2. [Base R](/base.qmd) - gives you a Base R only setup with the data already loaded
+3. [Tidyverse](/tidyverse.qmd) - gives you R + dplyr + ggplot2 and the data already loaded. _This page takes about 20 seconds to load the packages_
 
-To install packages in `webr` use `webr::install()` with a vector of packages you want to install.
+## What is this magic
 
-The following packages are currently available in `webr`:
-
-```{r, echo=FALSE}
-#| class: scrolling
-packages = read.csv("https://raw.githubusercontent.com/r-wasm/webr-repo/main/repo-packages")
-packages$Formula
-```
-
-Install any packages you want here:
-
-```{webr-r}
-webr::install()
-```
-
-## Tidy Tuesday away!
-
-Anything you type in this block will run when you 
-
-```{webr-r}
-```
+If you want to see how all of this works you can checkout the [GitHub repository](https://github.com/weecology/tidy-tuesday-portal) for this site.
+The site uses [Quarto](https://quarto.org/) with the [Quarto WebR extension](https://github.com/coatless/quarto-webr).  
+Preloading data on the [Base](/base.qmd) and [Tidyverse](/tidyverse.qmd) pages requires a little bit of javascript.

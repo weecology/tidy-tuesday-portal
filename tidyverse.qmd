@@ -1,0 +1,61 @@
+---
+title: Portal Project Tidy Tuesday - Tidyverse
+editor: visual
+engine: knitr
+filters:
+  - webr
+webr:
+  packages: ['ggplot2', 'dplyr']
+---
+
+<html>
+<script type="module">
+//=== Load data on load ===
+import { WebR } from 'https://webr.r-wasm.org/latest/webr.mjs'; 
+globalThis.webR = new WebR(); 
+await globalThis.webR.init(); 
+globalThis.webRCodeShelter = await new globalThis.webR.Shelter();
+let surveys = await globalThis.webR.evalR('read.csv("https://tidytuesday.weecology.org/surveys.csv", na.strings = c(""))')
+await webR.objs.globalEnv.bind('surveys', surveys)
+let species = await globalThis.webR.evalR('read.csv("https://tidytuesday.weecology.org/species.csv", na.strings = c(""))')
+await webR.objs.globalEnv.bind('species', species)
+let plots = await globalThis.webR.evalR('read.csv("https://tidytuesday.weecology.org/plots.csv")')
+await webR.objs.globalEnv.bind('plots', plots)
+</script>
+</html>
+
+```{r}
+#| echo: false
+#| output: false
+surveys <- read.csv("https://tidytuesday.weecology.org/surveys.csv", na.strings = "")
+species <- read.csv("https://tidytuesday.weecology.org/species.csv", na.strings = "")
+plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")
+```
+
+::: {.callout-note collapse="true"}
+
+## The data
+There are three tables in this dataset.
+
+`surveys`, which has one row for each individual animal caught:
+
+```{r}
+head(surveys, n = 3)
+```
+
+`species`, which has one row for each species in the dataset:
+
+```{r}
+head(species, n = 3)
+```
+
+`plots`, which has one row per plot that describes the tells you if the plot is a `control` plot or an `exclosure` plot where the dominant kangaroo rat species have been excluded.
+
+```{r}
+head(plots, n = 3)
+```
+
+:::
+
+```{webr-r}
+```

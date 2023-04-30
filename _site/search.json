@@ -1,30 +1,65 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Portal Project Tidy Tuesday",
+    "objectID": "getting-started.html",
+    "href": "getting-started.html",
+    "title": "Getting started with webR for Tidy Tuesday",
     "section": "",
-    "text": "Since webr only has limited packages we’ll load the Tidy Tuesday data directly. Click the Run code button at the top to load the data.\nLoading webR...\n\n\n\n\nTake a look at the data here using your favorite commands (e.g., head(surveys)). Any commands you enter will be run right in the browser.\nLoading webR..."
+    "text": "Since webr only has limited packages we’ll load the Tidy Tuesday data directly. Click the Run code button at the top to load the data.\nLoading webR...\n\n\n\n\nTake a look at the data here using your favorite commands (e.g., head(surveys)). Any commands you enter will be run right in the browser.\nLoading webR...\n\n\n\n\nNote that there is a species code \"NA\" for Neotoma albigula, so you might want to add na.strings = \"\" to the read.csv calls (e.g., read.csv(\"https://tidytuesday.weecology.org/surveys.csv\", na.strings = \"\")). You can change them right in the code block and click Run code to rerun."
   },
   {
-    "objectID": "index.html#load-packages",
-    "href": "index.html#load-packages",
-    "title": "Portal Project Tidy Tuesday",
-    "section": "Load packages",
-    "text": "Load packages\nTo install packages in webr use webr::install() with a vector of packages you want to install.\nThe following packages are currently available in webr:\n\n\n [1] \"Hmisc\"        \"MASS\"         \"Matrix\"       \"R6\"           \"RColorBrewer\"\n [6] \"Rcpp\"         \"base64enc\"    \"bit\"          \"bit64\"        \"bitops\"      \n[11] \"brio\"         \"bslib\"        \"cachem\"       \"cellranger\"   \"cli\"         \n[16] \"clipr\"        \"colorspace\"   \"commonmark\"   \"cpp11\"        \"crayon\"      \n[21] \"data.table\"   \"decor\"        \"desc\"         \"diffobj\"      \"digest\"      \n[26] \"dplyr\"        \"ellipsis\"     \"evaluate\"     \"fansi\"        \"farver\"      \n[31] \"fastmap\"      \"fontawesome\"  \"forcats\"      \"generics\"     \"ggplot2\"     \n[36] \"glue\"         \"gtable\"       \"hexbin\"       \"hms\"          \"htmltools\"   \n[41] \"httr\"         \"isoband\"      \"jquerylib\"    \"jsonlite\"     \"labeling\"    \n[46] \"later\"        \"lattice\"      \"latticeExtra\" \"lifecycle\"    \"magrittr\"    \n[51] \"memoise\"      \"mgcv\"         \"mime\"         \"mockr\"        \"munsell\"     \n[56] \"nlme\"         \"pillar\"       \"pkgconfig\"    \"pkgload\"      \"praise\"      \n[61] \"prettyunits\"  \"progress\"     \"promises\"     \"purrr\"        \"rappdirs\"    \n[66] \"readr\"        \"readxl\"       \"rematch\"      \"rematch2\"     \"rlang\"       \n[71] \"rprojroot\"    \"rstudioapi\"   \"sass\"         \"scales\"       \"survival\"    \n[76] \"sourcetools\"  \"stringi\"      \"stringr\"      \"svglite\"      \"testthat\"    \n[81] \"tibble\"       \"tidyr\"        \"tidyselect\"   \"tinytest\"     \"tzdb\"        \n[86] \"unitizer\"     \"utf8\"         \"vctrs\"        \"viridisLite\"  \"vroom\"       \n[91] \"waldo\"        \"whoami\"       \"withr\"        \"writexl\"      \"xtable\"      \n\n\nInstall any packages you want here:\nLoading webR..."
+    "objectID": "getting-started.html#install-packages",
+    "href": "getting-started.html#install-packages",
+    "title": "Getting started with webR for Tidy Tuesday",
+    "section": "Install packages",
+    "text": "Install packages\nTo install packages in webr use webr::install() with a vector of packages you want to install.\nThe following packages are currently available in webr:\n\n\n [1] \"Hmisc\"        \"MASS\"         \"Matrix\"       \"R6\"           \"RColorBrewer\"\n [6] \"Rcpp\"         \"base64enc\"    \"bit\"          \"bit64\"        \"bitops\"      \n[11] \"brio\"         \"bslib\"        \"cachem\"       \"cellranger\"   \"cli\"         \n[16] \"clipr\"        \"colorspace\"   \"commonmark\"   \"cpp11\"        \"crayon\"      \n[21] \"data.table\"   \"decor\"        \"desc\"         \"diffobj\"      \"digest\"      \n[26] \"dplyr\"        \"ellipsis\"     \"evaluate\"     \"fansi\"        \"farver\"      \n[31] \"fastmap\"      \"fontawesome\"  \"forcats\"      \"generics\"     \"ggplot2\"     \n[36] \"glue\"         \"gtable\"       \"hexbin\"       \"hms\"          \"htmltools\"   \n[41] \"httr\"         \"isoband\"      \"jquerylib\"    \"jsonlite\"     \"labeling\"    \n[46] \"later\"        \"lattice\"      \"latticeExtra\" \"lifecycle\"    \"magrittr\"    \n[51] \"memoise\"      \"mgcv\"         \"mime\"         \"mockr\"        \"munsell\"     \n[56] \"nlme\"         \"pillar\"       \"pkgconfig\"    \"pkgload\"      \"praise\"      \n[61] \"prettyunits\"  \"progress\"     \"promises\"     \"purrr\"        \"rappdirs\"    \n[66] \"readr\"        \"readxl\"       \"rematch\"      \"rematch2\"     \"rlang\"       \n[71] \"rprojroot\"    \"rstudioapi\"   \"sass\"         \"scales\"       \"survival\"    \n[76] \"sourcetools\"  \"stringi\"      \"stringr\"      \"svglite\"      \"testthat\"    \n[81] \"tibble\"       \"tidyr\"        \"tidyselect\"   \"tinytest\"     \"tzdb\"        \n[86] \"unitizer\"     \"utf8\"         \"vctrs\"        \"viridisLite\"  \"vroom\"       \n[91] \"waldo\"        \"whoami\"       \"withr\"        \"writexl\"      \"xtable\"      \n\n\nInstall any packages you want here:\nLoading webR..."
   },
   {
-    "objectID": "index.html#tidy-tuesday-away",
-    "href": "index.html#tidy-tuesday-away",
-    "title": "Portal Project Tidy Tuesday",
+    "objectID": "getting-started.html#tidy-tuesday-away",
+    "href": "getting-started.html#tidy-tuesday-away",
+    "title": "Getting started with webR for Tidy Tuesday",
     "section": "Tidy Tuesday away!",
     "text": "Tidy Tuesday away!\nAnything you type in this block will run when you\nLoading webR..."
   },
   {
-    "objectID": "tidytuesday.html",
-    "href": "tidytuesday.html",
+    "objectID": "tidyverse.html",
+    "href": "tidyverse.html",
     "title": "Portal Project Tidy Tuesday - Tidyverse",
     "section": "",
-    "text": "Since webr only has limited packages so far we can’t use the Tidy Tuesday package so we’ll load the data directly.\nLoading webR..."
+    "text": "The data\n\n\n\n\n\nThere are three tables in this dataset.\nsurveys, which has one row for each individual animal caught:\n\nhead(surveys, n = 3)\n\n  censusdate month day year treatment plot stake species sex reprod age testes\n1 1977-07-16     7  16 1977   control    3    23      NA   M      Z  NA     NA\n2 1977-07-16     7  16 1977   control    3    26      DM   M      Z  NA     NA\n3 1977-07-16     7  16 1977   control    3    55      DM   M      Z  NA     NA\n  vagina pregnant nipples lactation hfl wgt tag note2 ltag note3\n1     NA       NA      NA        NA  33  NA   0    NA    0    NA\n2     NA       NA      NA        NA  35  NA   0    NA    0    NA\n3     NA       NA      NA        NA  35  NA   0    NA    0    NA\n\n\nspecies, which has one row for each species in the dataset:\n\nhead(species, n = 3)\n\n  species           scientificname   taxa                 commonname\n1      AH Ammospermophilus harrisi Rodent Harris's antelope squirrel\n2      BA          Baiomys taylori Rodent       Northern pygmy mouse\n3      PB      Chaetodipus baileyi Rodent      Bailey's pocket mouse\n  censustarget unidentified rodent granivore minhfl     meanhfl maxhfl minwgt\n1            0            0      1         0     31          33     35     NA\n2            1            0      1         1      6 13.25064599     15      6\n3            1            0      1         1     16    26.03125     47     10\n      meanwgt maxwgt     juvwgt\n1          NA     NA         NA\n2 9.449086162     18         NA\n3 31.87351518     79 18.9950495\n\n\nplots, which has one row per plot that describes the tells you if the plot is a control plot or an exclosure plot where the dominant kangaroo rat species have been excluded.\n\nhead(plots, n = 3)\n\n  plot treatment\n1    3 exclosure\n2    4   control\n3   11   control\n\n\n\n\n\nLoading webR..."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Portal Project - Tidy Tuesday",
+    "section": "",
+    "text": "WebR is a version of R that runs in the browswer. You don’t need to install R and no one needs to setup a server, it just runs on your local computer, but through your browser. This site lets you use it for this weeks Tidy Tuesday using the long-term monitoring data on mammals from the Portal Project."
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "Portal Project - Tidy Tuesday",
+    "section": "Data",
+    "text": "Data"
+  },
+  {
+    "objectID": "index.html#lets-go",
+    "href": "index.html#lets-go",
+    "title": "Portal Project - Tidy Tuesday",
+    "section": "Let’s go!",
+    "text": "Let’s go!\nThere are three pages on this site:\n\nGetting Started - will walk you through loading the data and installing packages in WebR\nBase R - gives you a Base R only setup with the data already loaded\nTidyverse - gives you R + dplyr + ggplot2 and the data already loaded. This page takes about 20 seconds to load the packages"
+  },
+  {
+    "objectID": "index.html#what-is-this-magic",
+    "href": "index.html#what-is-this-magic",
+    "title": "Portal Project - Tidy Tuesday",
+    "section": "What is this magic",
+    "text": "What is this magic\nIf you want to see how all of this works you can checkout the GitHub repository for this site. The site uses Quarto with the Quarto WebR extension.\nPreloading data on the Base and Tidyverse pages requires a little bit of javascript."
+  },
+  {
+    "objectID": "base.html",
+    "href": "base.html",
+    "title": "Portal Project Tidy Tuesday - Base",
+    "section": "",
+    "text": "The data\n\n\n\n\n\nThere are three tables in this dataset.\nsurveys, which has one row for each individual animal caught:\n\nhead(surveys, n = 3)\n\n  censusdate month day year treatment plot stake species sex reprod age testes\n1 1977-07-16     7  16 1977   control    3    23      NA   M      Z  NA     NA\n2 1977-07-16     7  16 1977   control    3    26      DM   M      Z  NA     NA\n3 1977-07-16     7  16 1977   control    3    55      DM   M      Z  NA     NA\n  vagina pregnant nipples lactation hfl wgt tag note2 ltag note3\n1     NA       NA      NA        NA  33  NA   0    NA    0    NA\n2     NA       NA      NA        NA  35  NA   0    NA    0    NA\n3     NA       NA      NA        NA  35  NA   0    NA    0    NA\n\n\nspecies, which has one row for each species in the dataset:\n\nhead(species, n = 3)\n\n  species           scientificname   taxa                 commonname\n1      AH Ammospermophilus harrisi Rodent Harris's antelope squirrel\n2      BA          Baiomys taylori Rodent       Northern pygmy mouse\n3      PB      Chaetodipus baileyi Rodent      Bailey's pocket mouse\n  censustarget unidentified rodent granivore minhfl     meanhfl maxhfl minwgt\n1            0            0      1         0     31          33     35     NA\n2            1            0      1         1      6 13.25064599     15      6\n3            1            0      1         1     16    26.03125     47     10\n      meanwgt maxwgt     juvwgt\n1          NA     NA         NA\n2 9.449086162     18         NA\n3 31.87351518     79 18.9950495\n\n\nplots, which has one row per plot that describes the tells you if the plot is a control plot or an exclosure plot where the dominant kangaroo rat species have been excluded.\n\nhead(plots, n = 3)\n\n  plot treatment\n1    3 exclosure\n2    4   control\n3   11   control\n\n\n\n\n\nLoading webR..."
   }
 ]

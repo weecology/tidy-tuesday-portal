@@ -9,6 +9,16 @@ project:
 
 website:
   title: "Portal Project - Tidy Tuesday"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: getting-started.qmd
+        text: Getting Started
+      - href: base.qmd
+        text: Base R
+      - href: tidyverse.qmd
+        text: Tidyverse
 
 format:
   html:

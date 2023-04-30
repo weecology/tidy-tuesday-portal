@@ -1,0 +1,51 @@
+---
+title: Getting started with webR for Tidy Tuesday
+editor: visual
+engine: knitr
+filters:
+  - webr
+---
+
+## Load the data
+
+Since `webr` only has limited packages we'll load the Tidy Tuesday data directly.
+Click the `Run code` button at the top to load the data.
+
+```{webr-r}
+surveys <- read.csv("https://tidytuesday.weecology.org/surveys.csv")
+species <- read.csv("https://tidytuesday.weecology.org/species.csv")
+plots <- read.csv("https://tidytuesday.weecology.org/plots.csv")
+```
+
+Take a look at the data here using your favorite commands (e.g., `head(surveys)`).
+Any commands you enter will be run right in the browser.
+
+```{webr-r}
+```
+
+Note that there is a species code `"NA"` for [_Neotoma albigula_](https://en.wikipedia.org/wiki/White-throated_woodrat), so you might want to add `na.strings = ""` to the `read.csv` calls (e.g., `read.csv("https://tidytuesday.weecology.org/surveys.csv", na.strings = "")`). You can change them right in the code block and click `Run code` to rerun.
+
+## Install packages
+
+To install packages in `webr` use `webr::install()` with a vector of packages you want to install.
+
+The following packages are currently available in `webr`:
+
+```{r, echo=FALSE}
+#| class: scrolling
+packages = read.csv("https://raw.githubusercontent.com/r-wasm/webr-repo/main/repo-packages")
+packages$Formula
+```
+
+Install any packages you want here:
+
+```{webr-r}
+webr::install()
+```
+
+## Tidy Tuesday away!
+
+Anything you type in this block will run when you 
+
+```{webr-r}
+```
