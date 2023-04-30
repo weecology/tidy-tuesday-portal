@@ -47,7 +47,7 @@ head(surveys, n = 3)
 head(species, n = 3)
 ```
 
-`plots`, which has one row per plot that describes the tells you if the plot is a `control` plot or an `exclosure` plot where the dominant kangaroo rat species have been excluded.
+`plots`, which has one row per plot that tells you if the plot is a `control` plot or an `exclosure` plot where the dominant kangaroo rat species have been excluded.
 
 ```{r}
 head(plots, n = 3)
