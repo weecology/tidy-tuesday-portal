@@ -16,7 +16,7 @@ This site lets you use it for this weeks Tidy Tuesday on long-term monitoring da
 
 The dataset is on the long-term dynamics of rodent species. It has three tables:
 
-* `surveys` - which has one row for each individual animal caught including where, when, and information on the individual like size
+* `surveys` - which has one row for each individual animal caught including where, when, and information on the individual (e.g., size)
 * `species`, which has one row for each species in the dataset
 * `plots`, which has one row per plot that tells you if the plot is a `control` plot or an `exclosure` plot where the dominant kangaroo rat species have been excluded.
 
